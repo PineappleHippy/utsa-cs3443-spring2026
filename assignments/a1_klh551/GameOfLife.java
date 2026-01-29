@@ -168,9 +168,9 @@ public class GameOfLife {
 	 */
 	public static void roundHeader(int round, int numRounds, int divLength) {
 		System.out.println();
-		System.out.println("─".repeat(divLength));
+		System.out.println("───────────────");
 		System.out.println("Round: " + round + "/" + numRounds);
-		System.out.println("─".repeat(divLength));
+		System.out.println("───────────────");
 		System.out.println();
 	}
 }
