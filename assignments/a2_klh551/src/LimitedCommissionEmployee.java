@@ -1,5 +1,3 @@
-package a2_klh551;
-
 public class LimitedCommissionEmployee extends CommissionEmployee {
 
 	private double basePay;

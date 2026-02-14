@@ -1,5 +1,3 @@
-package a2_klh551;
-
 public class Company {
 
 	private String name;

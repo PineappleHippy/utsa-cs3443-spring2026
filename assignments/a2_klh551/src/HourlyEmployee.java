@@ -1,5 +1,3 @@
-package a2_klh551;
-
 public class HourlyEmployee extends Employee {
 	
 	private double hourlyWage;

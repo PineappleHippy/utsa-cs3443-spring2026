@@ -1,5 +1,3 @@
-package a2_klh551;
-
 public abstract class Employee implements PayableEntity {
 	private static int numEmployees;
 	private String name;
