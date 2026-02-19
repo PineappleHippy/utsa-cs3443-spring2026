@@ -6,23 +6,23 @@ public class Utility implements PayableEntity {
 	private double base;
 
 	public Utility(String name, double rate, double base) {
-		// TODO Utility constructor
+      this.name = name;
+      this.rate = rate;
+      this.base = base;
 	}
 
 	public void setUsage(double usage) {
-		// TODO setUsage
+      this.usage = usage;
 	}
 
 	@Override
 	public double amountOwed() {
-		// TODO amountOwed
-		return 0;
+		return (usage * rate) + base;
 	}
 
 	@Override
 	public String toString() {
-		// TODO toString
-		return "";
+      String utilityInfo = String.format("%-20s $%10.2f", name, amountOwed());
+		return utilityInfo;
 	}
-
 }

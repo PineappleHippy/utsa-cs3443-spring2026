@@ -5,19 +5,16 @@ public class SalariedEmployee extends Employee {
 	public SalariedEmployee(String name, double weeklyPay) {
 		super(name);
 		this.weeklyPay = weeklyPay;
-		// TODO SalariedEmployee constructor
 	}
 
 	@Override
 	public double calcPreBonusPay() {
-		// TODO calcPreBonusPay
-		return 0;
+		return weeklyPay;
 	}
 
 	@Override
 	public String getJobCode() {
-		// TODO getJobCode
-		return null;
+		return "SLRY";
 	}
 
 }

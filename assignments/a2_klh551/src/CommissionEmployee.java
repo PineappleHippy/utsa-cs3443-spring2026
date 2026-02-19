@@ -11,18 +11,20 @@ public class CommissionEmployee extends Employee {
 
 	public void setSales(double sales) {
 		// TODO setSales
+      this.sales = sales;
 	}
 
 	@Override
 	public double calcPreBonusPay() {
 		// TODO calcPreBonusPay
-		return 0;
+
+		return sales * commissionRate;
 	}
 
 	@Override
 	public String getJobCode() {
 		// TODO getJobCode
-		return null;
+		return "COMM";
 	}
 
 }

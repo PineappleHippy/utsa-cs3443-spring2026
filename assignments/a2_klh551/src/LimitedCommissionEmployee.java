@@ -5,19 +5,20 @@ public class LimitedCommissionEmployee extends CommissionEmployee {
 	public LimitedCommissionEmployee(String name, double commissionRate, double basePay) {
 		super(name, commissionRate);
 		this.basePay = basePay;
-		// TODO LimitedCommissionEmployee constructor
 	}
 
 	@Override
 	public double calcPreBonusPay() {
-		// TODO calcPreBonusPay
-		return 0;
+      double maxPreBonusPay = basePay *2;
+      double commision = super.calcPreBonusPay();
+      if (commision < basePay) return basePay;
+      else if(commision > maxPreBonusPay) return maxPreBonusPay;
+      else return commision;
 	}
 
 	@Override
 	public String getJobCode() {
-		// TODO getJobCode
-		return null;
+		return "LCOM";
 	}
 
 }

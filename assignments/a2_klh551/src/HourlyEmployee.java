@@ -6,23 +6,21 @@ public class HourlyEmployee extends Employee {
 	public HourlyEmployee(String name, double hourlyWage) {
 		super(name);
 		this.hourlyWage = hourlyWage;
-		// TODO HourlyEmployee constructor
 	}
 	
 	public void setHoursWorked(double hoursWorked) {
-		// TODO setHoursWorked
+      this.hoursWorked = hoursWorked;
 	}
 	
 	@Override
 	public double calcPreBonusPay() {
-		// TODO calcPreBonusPay
-		return 0;
+      if (hoursWorked <= 40) return hoursWorked * hourlyWage;
+      else return 40 * hourlyWage + (hoursWorked - 40) * hourlyWage * 1.5;
 	}
 
 	@Override
 	public String getJobCode() {
-		// TODO getJobCode
-		return null;
+		return "HRLY";
 	}
 
 }

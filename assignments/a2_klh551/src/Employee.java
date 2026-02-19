@@ -1,10 +1,11 @@
 public abstract class Employee implements PayableEntity {
-	private static int numEmployees;
+	private static int numEmployees = 0;
 	private String name;
 	private double bonus;
 
 	public Employee(String name) {
-		// TODO Employee constructor
+      this.name = name;
+      numEmployees++;
 	}
 
 	public abstract double calcPreBonusPay();
@@ -12,38 +13,34 @@ public abstract class Employee implements PayableEntity {
 	public abstract String getJobCode();
 	
 	public static int getNumEmployees() {
-		// TODO getNumEmployees
-		return 0;
+		return numEmployees;
 	}
 	
 	public double calcTotalPay() {
-		// TODO calcTotalPay
-		return 0.0;
+      double totalPay = calcPreBonusPay() + bonus;
+		return totalPay;
 	}
 
 	@Override
 	public double amountOwed() {
-		// TODO amountOwed
-		return 0;
+		return calcTotalPay();
 	}
 	
 	public String getName() {
-		// TODO getName
-		return "";
+		return name;
 	}
 	
 	public double getBonus() {
-		// TODO getBonus
-		return 0.0;
+		return bonus;
 	}
 	
 	public void setBonus(double bonus) {
-		// TODO setBonus
+      this.bonus = bonus;
 	}
 	
 	@Override
 	public String toString() {
-		// TODO toString
-		return "";
+      String employeeInfo = String.format("%-15s %s $%8.2f $%8.2f",getName(), getJobCode(),calcPreBonusPay(),calcTotalPay());
+		return employeeInfo;
 	}
 }
