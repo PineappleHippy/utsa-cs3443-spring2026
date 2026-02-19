@@ -1,30 +1,45 @@
+/**
+ * An employee paid solely by a commission rate on sales.
+ *
+ * @author JDT|KLH551
+ */
 public class CommissionEmployee extends Employee {
 
-	private double commissionRate;
-	private double sales;
+   private double commissionRate;
+   private double sales;
 
-	public CommissionEmployee(String name, double commissionRate) {
-		super(name);
-		this.commissionRate = commissionRate;
-		// TODO CommissionEmployee constructor
-	}
+   public CommissionEmployee(String name, double commissionRate) {
+      super(name);
+      this.commissionRate = commissionRate;
+   }
 
-	public void setSales(double sales) {
-		// TODO setSales
+   /**
+    * Sets the total sales amount for this pay period.
+    *
+    * @param sales total sales amount
+    */
+   public void setSales(double sales) {
       this.sales = sales;
-	}
+   }
 
-	@Override
-	public double calcPreBonusPay() {
-		// TODO calcPreBonusPay
+   /**
+    * Calculates pay as sales multiplied by the commission rate.
+    *
+    * @return pre-bonus pay amount
+    */
+   @Override
+   public double calcPreBonusPay() {
+      return sales * commissionRate;
+   }
 
-		return sales * commissionRate;
-	}
-
-	@Override
-	public String getJobCode() {
-		// TODO getJobCode
-		return "COMM";
-	}
+   /**
+    * Returns the job code for commission employees.
+    *
+    * @return "COMM"
+    */
+   @Override
+   public String getJobCode() {
+      return "COMM";
+   }
 
 }
