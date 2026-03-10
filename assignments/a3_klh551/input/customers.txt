@@ -1,0 +1,53 @@
+<begin-dictionary>
+<NAME> "Carl"
+<AMOUNT> "$100"
+<PRODUCT> "potato"
+<end-dictionary>
+
+<begin-dictionary>
+<NAME> "Mary"
+<AMOUNT> "$9.99"
+<PRODUCT> "miniature pencil"
+<end-dictionary>
+
+<begin-dictionary>
+<NAME> "Sandy"
+<AMOUNT> "$25"
+<PRODUCT> "copper portrait of Abraham Lincoln"
+<end-dictionary>
+
+<begin-dictionary>
+<NAME> "Bob"
+<AMOUNT> "$50"
+<PRODUCT> "rubber duck"
+<end-dictionary>
+
+<begin-dictionary>
+<NAME> "Alice"
+<AMOUNT> "$200"
+<PRODUCT> "golden spatula"
+<end-dictionary>
+
+<begin-dictionary>
+<NAME> "Tom"
+<AMOUNT> "$15"
+<PRODUCT> "novelty pen"
+<end-dictionary>
+
+<begin-dictionary>
+<NAME> "Linda"
+<AMOUNT> "$75"
+<PRODUCT> "singing fish"
+<end-dictionary>
+
+<begin-dictionary>
+<NAME> "Steve"
+<AMOUNT> "$300"
+<PRODUCT> "vintage typewriter"
+<end-dictionary>
+
+<begin-dictionary>
+<NAME> "Emma"
+<AMOUNT> "$12"
+<PRODUCT> "glow in the dark yo-yo"
+<end-dictionary>

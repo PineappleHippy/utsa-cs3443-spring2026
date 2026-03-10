@@ -1,0 +1,17 @@
+<begin-dictionary>
+<NAME> "James"
+<AMOUNT> "$45"
+<PRODUCT> "inflatable unicorn"
+<end-dictionary>
+
+<begin-dictionary>
+<NAME> "Sofia"
+<AMOUNT> "$88"
+<PRODUCT> "bluetooth toaster"
+<end-dictionary>
+
+<begin-dictionary>
+<NAME> "Derek"
+<AMOUNT> "$12"
+<PRODUCT> "tiny cactus"
+<end-dictionary>
