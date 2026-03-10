@@ -9,7 +9,7 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 
 /**
- * A form letter loaded from a template file that supports tag substitution.
+ * Generates a form letter from a template file using a Dictionary.
  *
  * @author JDT - KLH551
  */
@@ -25,9 +25,6 @@ public class FormLetter {
      * @param templatePath the path to the template file
      */
     public FormLetter(String templatePath) throws IOException {
-        // 4. Loop calling nextNonBlankLine(), adding each non-null line to lines
-        // 5. Close the reader
-        // NOTE: Read the template ONCE here and store it. Never read again.
        templateFile = new File(templatePath);
        lines = new ArrayList<>();
        BufferedFileReader reader = new BufferedFileReader(templateFile);

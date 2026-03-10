@@ -14,7 +14,7 @@ import java.io.IOException;
 public class FormLetterBatch {
 
    /**
-    * Generates one output file per Dictionary found in inFile, writing results into outDir.
+    * Generates one output file per Dictionary found in inFile, writes results to  outDir.
     *
     * @param letter the form letter template to render
     * @param inFile the dictionary file containing one or more dictionary blocks
@@ -45,11 +45,6 @@ public class FormLetterBatch {
     * @param outDirName   the output directory path
     */
    public void generateAll(String templatePath, String inDirName, String outDirName) throws IOException {
-      // 2. Create the output directory if it doesn't exist: new File(outDirName).mkdirs()
-      // 3. Get all files in the input directory: new File(inDirName).listFiles()
-      // 4. For each file in the array, call generate(letter, file, new File(outDirName))
-      // NOTE: Never hold more than one Dictionary in memory at a time.
-      //       DictionaryIterator handles this naturally — next() gives you one at a time.
       FormLetter fl = new FormLetter(templatePath);
       new File(outDirName).mkdirs();
       File outDir = new File(outDirName);
@@ -57,8 +52,6 @@ public class FormLetterBatch {
       for (File f : files) {
          generate(fl, f, outDir);
       }
-
-
    }
 }
 
