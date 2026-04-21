@@ -3,6 +3,7 @@ package application.controller;
 import application.model.CalendarEvent;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.control.Button;
 
 /**
  * Event handler for the Details buttons in the main Calendar scene.
@@ -16,7 +17,7 @@ public class DetailsButtonEventHandler implements EventHandler<ActionEvent> {
    private MainController mainController;
 
    /**
-    * Constructs a DetailsButtonEventHandler tied to the given MainController.
+    * Constructs a DetailsButtonEventHandler tied to the MainController.
     *
     * @param mainController the MainController to notify when a Details button is clicked
     */
@@ -32,7 +33,7 @@ public class DetailsButtonEventHandler implements EventHandler<ActionEvent> {
     */
    @Override
    public void handle(ActionEvent event) {
-      javafx.scene.control.Button btn = (javafx.scene.control.Button) event.getSource();
+      Button btn = (Button) event.getSource();
       CalendarEvent calEvent = (CalendarEvent) btn.getUserData();
       mainController.detailsScene(calEvent);
    }

@@ -8,13 +8,9 @@ package application.model;
  */
 public class CalendarEvent {
 
-   private String category;
-   private String name;
-   private String location;
-   private int month;
-   private int day;
-   private String admission;
-   private String description;
+   private String category, name, location;
+   private int month, day;
+   private String admission, description;
 
    /**
     * Constructs a CalendarEvent with all event details.

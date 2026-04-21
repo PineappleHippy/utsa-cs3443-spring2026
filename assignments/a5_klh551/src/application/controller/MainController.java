@@ -29,9 +29,7 @@ public class MainController {
    private Scene mainScene;
 
    /**
-    * Called automatically after the FXML fields are injected.
-    * Loads events from the model, creates the DetailsButtonEventHandler and MainView,
-    * and triggers the initial display of events.
+    * Loads events from the model and initializes the view.
     */
    @FXML
    public void initialize() {

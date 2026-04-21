@@ -1,7 +1,6 @@
 package application.model;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -17,11 +16,9 @@ public class EventListings {
    private ArrayList<CalendarEvent> events;
 
    /**
-    * Constructs an EventListings object by reading all events from events.csv.
-    * The CSV format per line is: category, name, location, month, day, admission, description.
+    * Reads all events from events.csv and populates the events list.
     *
-    * @throws FileNotFoundException if events.csv cannot be found
-    * @throws Exception if the resource URL cannot be converted to a URI
+    * @throws Exception if the file cannot be found or read
     */
    public EventListings() throws Exception {
       events = new ArrayList<CalendarEvent>();

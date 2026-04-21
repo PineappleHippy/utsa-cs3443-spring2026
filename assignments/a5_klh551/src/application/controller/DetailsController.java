@@ -36,10 +36,9 @@ public class DetailsController {
    }
 
    /**
-    * Sets the CalendarEvent to display and stores the main scene reference for back navigation.
-    * Called by MainController after loading the Details FXML.
+    * Displays the given event's details in the Details scene.
     *
-    * @param event the CalendarEvent to show in the Details scene
+    * @param event the CalendarEvent to display
     */
    public void setEvent(CalendarEvent event) {
       detailsView.displayDetails(event);
